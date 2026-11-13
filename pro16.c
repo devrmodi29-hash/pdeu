@@ -1,21 +1,34 @@
 #include <stdio.h>
 
-int main()
-{
-    float P, R, N, I;
+int main() {
+    int arr[10];
+    int size = 5;
+    int i, pos;
 
-    printf("Enter Principal: ");
-    scanf("%f", &P);
+    printf("Enter 5 elements:\n");
+    for (i = 0; i < size; i++) {
+        printf("Element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
 
-    printf("Enter Rate: ");
-    scanf("%f", &R);
+    printf("Enter the position to delete (1 to %d): ", size);
+    scanf("%d", &pos);
 
-    printf("Enter Time in years: ");
-    scanf("%f", &N);
+    int index = pos - 1;
 
-    I = (P * R * N) / 100;
+    // Shift elements to the left starting from the deletion index
+    for (i = index; i < size - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
 
-    printf("Interest = %.2f", I);
+    // Decrease the logical size of the array
+    size--;
 
-    ;
+    printf("\nArray after deletion:\n");
+    for (i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
 }

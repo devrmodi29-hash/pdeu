@@ -1,17 +1,24 @@
-#include<stdio.h>
-void main()
-{
-    int a,b,sub,mul,div,add;
-    printf("ENTER TWO NUMBER");
-    scanf("%d %d",&a,&b);
-    add=a+b;
-    sub=a-b;
-    mul=a*b;
-    div=a/b;
-    printf("ADD = %d",add);
-    printf("SUB = %d",sub);
-    printf("MUL = %d",mul);
-    printf("DIV = %d",div);
+#include <stdio.h>
 
+int main() {
+    int amount;
+    int notes[] = {500, 200, 100, 50, 20, 10, 5, 2, 1};
+    int totalNotes = 0;
+
+    printf("Enter amount: ");
+    scanf("%d", &amount);
+
+    printf("\nBreakdown:\n");
+    for (int i = 0; i < 9; i++) {
+        if (amount >= notes[i]) {
+            int count = amount / notes[i];
+            totalNotes += count;
+            printf("%d note(s) of %d Rs.\n", count, notes[i]);
+            amount %= notes[i];
+        }
+    }
+
+    printf("\nTotal minimum notes required: %d\n", totalNotes);
+
+    return 0;
 }
-
