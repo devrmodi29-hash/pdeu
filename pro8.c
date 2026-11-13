@@ -1,10 +1,27 @@
-#include<stdio.h>
-void main()
-{
-    float dollar,rupi;
-    printf("ENTER DOLLARS");
-    scanf("%f",&dollar);
+#include <stdio.h>
+#include <string.h>
 
-    rupi=dollar*48;
-    printf("RUPEES= %f",rupi);
+int main() {
+    char str[100];
+    int i, len, flag = 1;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    len = strlen(str);
+
+    for (i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            flag = 0;
+            break;
+        }
+    }
+
+    if (flag == 1) {
+        printf("The string is a Palindrome.\n");
+    } else {
+        printf("The string is not a Palindrome.\n");
+    }
+
+    return 0;
 }

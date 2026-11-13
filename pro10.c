@@ -1,14 +1,15 @@
-#include<stdio.h>
-void main()
-{
+#include <stdio.h>
 
-    float dollar,pound,rupi;
-    printf("DOLLARS\n");
-    scanf("%f",&dollar);
+int main() {
+    char str[100];
+    int i;
 
-    rupi=dollar*48;
-    pound=rupi/70;
-    printf("POUNDS= %f",pound);
+    printf("Enter a string: ");
+    scanf("%s", str);
 
+    for (i = 0; str[i] != '\0'; i++) {
+        printf("%c\n", str[i]);
+    }
 
+    return 0;
 }
