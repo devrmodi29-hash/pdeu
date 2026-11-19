@@ -1,17 +1,17 @@
 #include<stdio.h>
+
 void main()
 {
-    int a,b,sub,mul,div,add;
-    printf("ENTER TWO NUMBER");
-    scanf("%d %d",&a,&b);
-    add=a+b;
-    sub=a-b;
-    mul=a*b;
-    div=a/b;
-    printf("ADD = %d",add);
-    printf("SUB = %d",sub);
-    printf("MUL = %d",mul);
-    printf("DIV = %d",div);
+    int num;
+    printf("ENTER A NUMBER\n");
+    scanf("%d",&num);
+    if(num%7==0)
+    {
+        printf("THE NUMBER IS DIVISIBLE BY 7");
 
+    }
+    else
+    {
+        printf("THE NUMBER IS NOT DIVISIBLE BY 7");
+    }
 }
-
