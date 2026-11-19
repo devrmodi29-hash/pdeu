@@ -1,13 +1,16 @@
 #include<stdio.h>
+
 void main()
 {
-    int hour,min;
-    printf("ENTER HOURS");
-    scanf("%d",&hour);
-     min=hour*60;
-   printf("MINUTES= %d",min);
+    int i,n;
 
+    printf("ENTER N\n");
+    scanf("%d",&n);
 
+    for(i=0;i<=n;i+=2)
+    {
+        printf("%d\n",i);
+    }
 }
 
 

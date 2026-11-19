@@ -1,15 +1,15 @@
-#include<stdio.h>
-void main()
-{
-    float h,l,area;
-    printf("ENTER height of traingle");
-    scanf("%f",&h);
+#include <stdio.h>
 
-    printf("ENTER length of traingle");
-    scanf("%f",&l);
-    area=h*l/2.0;
+int main() {
+    int i, sum = 0;
 
-    printf("AREA OF TRIANGLE= %f",area);
+    for (i = 1; i <= 100; i++) {
+        if (i % 3 == 0) {
+            sum = sum + i;
+        }
+    }
 
+    printf("Sum of integers from 1 to 100 divisible by 3: %d\n", sum);
+
+    return 0;
 }
-

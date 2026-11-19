@@ -1,14 +1,15 @@
 #include<stdio.h>
+
 void main()
 {
-    int a,b,div;
-    printf("ENTER TWO NUMBER");
-    scanf("%d %d",&a,&b);
+    int i,n;
 
-    div=a/b;
+    printf("ENTER N");
+    scanf("%d",&n);
 
-    printf("DIV = %d\n",div);
-
+    for(i=1;i<=n;i+=2)
+    {
+        printf("%d\n",i);
+    }
 }
-
 

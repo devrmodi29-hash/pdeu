@@ -1,9 +1,10 @@
 #include<stdio.h>
 void main()
 {
-    int a,b,mul;
-    printf("ENTER TWO NUMBER");
-    scanf("%d %d",&a,&b);
-    mul=a*b;
-    printf("MUL = %d",mul);
+    int i;
+    for(i=0;i<=20;i+=2)
+    {
+        printf("%d\n",i);
+
+    }
 }

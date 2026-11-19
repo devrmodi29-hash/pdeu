@@ -1,14 +1,13 @@
 #include<stdio.h>
 void main()
 {
-
-    float dollar,pound,rupi;
-    printf("DOLLARS\n");
-    scanf("%f",&dollar);
-
-    rupi=dollar*48;
-    pound=rupi/70;
-    printf("POUNDS= %f",pound);
-
-
+    int num,i,fac;
+    fac=1;
+    printf("ENTER A NUMBER");
+    scanf("%d",&num);
+    for(i=num;i>=1;i--)
+    {
+        fac=fac*i;
+    }
+    printf("THE FACTORIAL OF %d IS: %d",num,fac);
 }

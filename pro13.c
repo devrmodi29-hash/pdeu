@@ -1,14 +1,17 @@
 #include<stdio.h>
 void main()
 {
-
-    int byte,kb,gb,mb;
-    printf("ENTER BYTES:\n");
-    scanf("%d",&byte);
-    kb=byte*(1024);
-    mb=byte*(1024*1024);
-    gb=byte*(1024*1024*1024);
-    printf("KB: %d\n",kb);
-    printf("MB: %d\n",mb);
-    printf("GB: %d\n",gb);
+int sum,i;
+i=1;
+sum=0;
+while(i<=100)
+{
+    if(i%13==0)
+    {
+      sum=sum+i;
+    }
+    i++;
 }
+printf("THE SUM OF ALL NOS DIVISIBLE BY 13 IS: %d",sum);
+}
+

@@ -1,11 +1,13 @@
 #include<stdio.h>
 void main()
 {
-    float gm,kgs;
-    printf("GMs:  \n");
-    scanf("%f",&gm);
-    kgs=gm/1000;
-    printf("KGs: %f",kgs);
-
-
+    int i=1;
+    char name[50];
+    printf("ENTER YOUR NAME");
+    scanf("%s",name);
+    while(i<=5)
+    {
+        printf("%s\n",name);
+        i++;
+    }
 }

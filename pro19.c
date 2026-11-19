@@ -1,12 +1,14 @@
-#include<stdio.h>
-void main()
-{
-    float r,area;
-    printf("ENTER RADIUS OF CIRCLE");
-    scanf("%f",&r);
-    area=22.0/7*r*r;
+#include <stdio.h>
 
-    printf("AREA OF CIRCLE= %f",area);
+int main() {
+    int i;
 
+    printf("Integers from 1 to 100 divisible by 5:\n");
+    for (i = 1; i <= 100; i++) {
+        if (i % 5 == 0) {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
 }
-

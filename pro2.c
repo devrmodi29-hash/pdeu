@@ -1,10 +1,11 @@
 #include<stdio.h>
 void main()
 {
-    int a,b,sub;
-    printf("ENTER TWO NUMBER");
-    scanf("%d %d",&a,&b);
-    sub=a-b;
-    printf("SUB = %d",sub);
+    int i;
+    for(i=1;i<=19;i+=2)
+    {
+        printf("%d\n",i);
 
+    }
 }
+

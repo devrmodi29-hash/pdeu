@@ -1,12 +1,17 @@
 #include<stdio.h>
+
 void main()
 {
-    float hour;
-    int min;
-    printf("ENTER MINUTES");
-    scanf("%d",&min);
-     hour=min/60;
-   printf("HOURS= %fHOURS",hour);
-}
+    int i,n,sum;
+    sum=0;
+    printf("ENTER N\n");
+    scanf("%d",&n);
 
+    for(i=1;i<=n;i++)
+    {
+        sum=sum+i;
+        //printf("%d\n",i);
+    }
+    printf("SUM OF NATURAL NUMBER= %d",sum);
+}
 

@@ -1,11 +1,19 @@
 #include<stdio.h>
+
 void main()
 {
-    float dollar,rupi;
-    printf("ENTER RUPEES");
-    scanf("%f",&rupi);
+    int i,n,sum;
+    sum=0;
 
-    dollar=rupi/48;
-    printf("RUPEES= %f",dollar);
+    printf("ENTER N\n");
+    scanf("%d",&n);
+
+    for(i=0;i<=n;i+=2)
+    {
+        sum=sum+i;
+        //printf("%d\n",i);
+    }
+    printf("SUM OF EVEN NUMBERS= %d",sum);
 }
+
 

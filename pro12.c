@@ -1,11 +1,17 @@
 #include<stdio.h>
 void main()
 {
-    float gm,kgs;
-    printf("Kgs:  \n");
-    scanf("%f",&kgs);
-    gm=kgs*1000;
-    printf("Gms: %f",gm);
-
-
+    int num;
+    int i=1;
+    char name[50];
+    printf("ENTER YOUR NAME\n");
+    scanf("%s",name);
+    printf("ENTER NUMBER OF TIME YOU WANT TO PRINT\n");
+    scanf("%d",&num);
+    while(i<=num)
+    {
+        printf("%s\n",name);
+        i++;
+    }
 }
+

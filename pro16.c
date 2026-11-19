@@ -1,21 +1,33 @@
 #include <stdio.h>
 
-int main()
+void main()
 {
-    float P, R, N, I;
+    int i = 1, n, max, min;
 
-    printf("Enter Principal: ");
-    scanf("%f", &P);
+    while(i <= 100)
+    {
+        printf("Enter number: ");
+        scanf("%d", &n);
 
-    printf("Enter Rate: ");
-    scanf("%f", &R);
+        if(i == 1)
+        {
+            max = n;
+            min = n;
+        }
 
-    printf("Enter Time in years: ");
-    scanf("%f", &N);
+        if(n > max)
+        {
+            max = n;
+        }
 
-    I = (P * R * N) / 100;
+        if(n < min)
+        {
+            min = n;
+        }
 
-    printf("Interest = %.2f", I);
+        i++;
+    }
 
-    ;
+    printf("Largest = %d\n", max);
+    printf("Smallest = %d", min);
 }

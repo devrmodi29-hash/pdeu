@@ -1,14 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void main()
-{
-    int m1,m2,m3,total;
-    float avg;
-    printf("ENTER THE MARKS OF THREE SUBJECT: \n");
-    scanf("%d %d %d",&m1,&m2,&m3);
-    total=m1+m2+m3;
-    avg=total/3.0;
-    printf("THE TOTAL OF THREE SUBJECTS IS: %d",total);
-printf("THE AVERAGE OF THREE SUBJECTS IS: %f",avg);
+int main() {
+    int num, rem, sum = 0;
 
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num < 0) {
+        num = -num;
+    }
+
+    while (num > 0) {
+        rem = num % 10;
+        sum = sum + rem;
+        num = num / 10;
+    }
+
+    printf("Sum of digits: %d\n", sum);
+
+    return 0;
 }

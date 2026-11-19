@@ -1,10 +1,19 @@
 #include<stdio.h>
+
 void main()
 {
-    float dollar,rupi;
-    printf("ENTER DOLLARS");
-    scanf("%f",&dollar);
+    int i,n,sum;
+    sum=0;
 
-    rupi=dollar*48;
-    printf("RUPEES= %f",rupi);
+    printf("ENTER N\n");
+    scanf("%d",&n);
+
+    for(i=1;i<=n;i+=2)
+    {
+        sum=sum+i;
+        //printf("%d\n",i);
+    }
+    printf("SUM OF ODD NUMBERS= %d",sum);
 }
+
+
